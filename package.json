@@ -1,7 +1,7 @@
 {
-  "name": "agnostic-migrate",
+  "name": "agnostic-migrator",
   "version": "1.0.0",
-  "description": "A data storage agnostic migration library",
+  "description": "A data storage-agnostic migration library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -18,12 +18,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnyhowStep/agnostic-migrate"
+    "url": "https://github.com/AnyhowStep/agnostic-migrator"
   },
   "bugs": {
-    "url": "https://github.com/AnyhowStep/agnostic-migrate/issues"
+    "url": "https://github.com/AnyhowStep/agnostic-migrator/issues"
   },
-  "homepage": "https://github.com/AnyhowStep/agnostic-migrate#readme",
+  "homepage": "https://github.com/AnyhowStep/agnostic-migrator#readme",
   "devDependencies": {
     "@types/bluebird": "^3.5.28",
     "@types/tape": "^4.2.33",
