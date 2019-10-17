@@ -1,0 +1,39 @@
+{
+  "name": "agnostic-migrate",
+  "version": "1.0.0",
+  "description": "A data storage agnostic migration library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "ts-node -P ./test/run-time/tsconfig.json -r ./test/run-time/tape-stream.ts -r ./test/run-time/bluebird-promise.ts",
+    "lint": "eslint --ext .ts",
+    "lint-all": "npm run lint -- ./src",
+    "clean": "rm -r ./dist || true",
+    "build": "tsc",
+    "rebuild": "(npm run clean) && (npm run build)",
+    "test-run-time": "ts-node -P ./test/run-time/tsconfig.json -r ./test/run-time/tape-stream.ts -r ./test/run-time/bluebird-promise.ts ./test/run-time/runner.ts",
+    "sanity-check": "(npm run rebuild) && (npm run test-run-time)"
+  },
+  "author": "anyhowstep",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnyhowStep/agnostic-migrate"
+  },
+  "bugs": {
+    "url": "https://github.com/AnyhowStep/agnostic-migrate/issues"
+  },
+  "homepage": "https://github.com/AnyhowStep/agnostic-migrate#readme",
+  "devDependencies": {
+    "@types/bluebird": "^3.5.28",
+    "@types/tape": "^4.2.33",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "bluebird": "^3.7.1",
+    "eslint": "^5.16.0",
+    "eslint-utils": "^1.4.1",
+    "tape": "^4.11.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.5.1"
+  }
+}
